@@ -99,7 +99,7 @@ export async function verifyOTP(req, res) {
 }
 
 //set 3:complate profile
-export async function compplateProfile(req, res) {
+export async function completeProfile(req, res) {
   try {
     const { email, department, stream, semester, year, rollNo } = req.body;
     if (!email)
