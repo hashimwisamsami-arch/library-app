@@ -3,7 +3,7 @@ const AuthContext = createContext(null);
 
 const SESSION_KEY = "library-auth-session";
 const TOKEN_KEY = "library-auth-token";
-const API_BASE_URL = "htpp://localhost:5000/api/auth";
+const API_BASE_URL = "http://localhost:5000/api/auth";
 
 const defaultAccounts = [];
 
