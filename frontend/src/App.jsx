@@ -8,6 +8,8 @@ import AdminDashboardPage from "./admin/AdminDashboardPage";
 import AdminBooksPage from "./admin/AdminBooksPage";
 import AdminUsersPage from "./admin/AdminUsersPage";
 import AdminFinePage from "./admin/AdminFinePage";
+import UserLayout from "./user/UserLayout";
+import UserDashoboardPage from "./user/UserDashoboardPage";
 const App = () => {
   return (
     <Routes>
@@ -23,6 +25,13 @@ const App = () => {
           <Route path="books" element={<AdminBooksPage />} />
           <Route path="users" element={<AdminUsersPage />} />
           <Route path="fines" element={<AdminFinePage />} />
+        </Route>
+      </Route>
+      {/* User */}
+      <Route element={<ProtectedRoute allowedRole="user" />}>
+        <Route path="/user" element={<UserLayout />}>
+          <Route index element={<Navigate to="/user/dashboard " replace />} />
+          <Route path="dashboard" element={<UserDashoboardPage />} />
         </Route>
       </Route>
     </Routes>
