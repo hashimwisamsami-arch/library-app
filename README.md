@@ -1,0 +1,1 @@
+MERN stack library app with admin dashborad using React -vite-, Node.js, Express.js,MongoDB and tailwindCss and it is responsive with OTP verification and Authentication and authorization for both the student and the teacher ("Admin) with Search, filtering, and data handling.
